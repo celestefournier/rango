@@ -1,65 +1,32 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+import 'normalize.css';
 
-import Card from './components/Card/Card';
+import Navbar from './components/Navbar/Navbar';
+import Login from './components/Main/Login';
+import Categories from './components/Main/Categories';
+// import Restaurants from './components/Main/Restaurants';
+
+const token = '';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          <Card />
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <header>
+          <Navbar/>
+        </header>
+
+        <main>
+          <Switch>
+            <Route path="/login" component={Login} exact />
+            <Route path="/" component={Categories} exact />
+          </Switch>
+        </main>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
-
-
-// import React, {Component} from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-
-// class App extends Component {
-//   state = {
-// 	response: ''
-//   };
-
-//   componentDidMount() {
-// 	this.callApi()
-//   	.then(res => this.setState({ response: res.express }))
-//   	.catch(err => console.log(err));
-//   }
-
-//   callApi = async () => {
-// 	const response = await fetch('/api/mensagem');
-// 	const body = await response.json();
-// 	if (response.status !== 200) throw Error(body.message);
-
-// 	return body;
-//   };
-
-//   render() {
-// 	return (
-//   	<div className="App">
-//     	<header className="App-header">
-//       	<img src={logo} className="App-logo" alt="logo" />
-//       	<h1 className="App-title">Wwwee to React</h1>
-//     	</header>
-//     	<p className="App-intro">{this.state.response}</p>
-//   	</div>
-// 	);
-//   }
-// }
-
-// export default App;
