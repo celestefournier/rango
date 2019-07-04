@@ -1,0 +1,12 @@
+html {
+	font-size: 100%;
+}
+
+*, *:before, *:after {
+	outline: transparent;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
