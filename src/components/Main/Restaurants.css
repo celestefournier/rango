@@ -1,0 +1,13 @@
+h2 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.restaurants {
+    max-width: 600px;
+    margin: auto;
+}

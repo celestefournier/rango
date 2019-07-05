@@ -34,6 +34,10 @@ p, span {
 	color: #555555;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 .errorMessage {
 	color: #F25250;
 }

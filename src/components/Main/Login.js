@@ -12,7 +12,7 @@ class Login extends Component {
       password: '',
       wrognPasswd: {display: 'none'}
     };
-    this.baseURL = "https://syqkl02isj.execute-api.us-east-1.amazonaws.com/dev";
+    this.baseURL = props.baseURL;
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }

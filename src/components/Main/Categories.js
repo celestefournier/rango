@@ -17,7 +17,7 @@ class Filter extends Component {
       coordinates: {},
       buttons: {}
     };
-    this.baseURL = "https://syqkl02isj.execute-api.us-east-1.amazonaws.com/dev";
+    this.baseURL = props.baseURL;
     this.handleClick = this.handleClick.bind(this);
     this.handleClasses = this.handleClasses.bind(this);
   }
@@ -86,19 +86,19 @@ class Filter extends Component {
     }
 
     var categories = this.state.categories;
-    var cousines = [];
+    var cuisines = [];
     var data = {};
     data.coords = {};
 
     categories.map(item => {
       ids.map(id => {
         if (item.id === id) {
-          cousines.push(item);
+          cuisines.push(item);
         }
       });
     });
     
-    data.cousines = cousines;
+    data.cuisines = cuisines;
     data.coords.lat = this.state.coordinates.latitude;
     data.coords.lng = this.state.coordinates.longitude;
 
