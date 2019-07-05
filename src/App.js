@@ -6,7 +6,7 @@ import 'normalize.css';
 import Navbar from './components/Navbar/Navbar';
 import Login from './components/Main/Login';
 import Categories from './components/Main/Categories';
-// import Restaurants from './components/Main/Restaurants';
+import Restaurants from './components/Main/Restaurants';
 
 const token = '';
 
@@ -21,7 +21,8 @@ function App() {
         <main>
           <Switch>
             <Route path="/login" component={Login} exact />
-            <Route path="/" component={Categories} exact />
+            <Route path="/categorias" component={Categories} exact />
+            <Route path="/" component={Restaurants} exact />
           </Switch>
         </main>
       </BrowserRouter>

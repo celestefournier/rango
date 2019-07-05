@@ -45,7 +45,7 @@ class Login extends Component {
       .then(res => {
         if (res.data.access_token) {
           sessionStorage.setItem("token", res.data.access_token);
-          this.props.history.push('/');
+          this.props.history.push('/categorias');
         }
       })
       .catch(err => {
@@ -72,7 +72,7 @@ class Login extends Component {
           <div className="fields">
             <label htmlFor="username">Usuário:</label>
             <input type="text" name="username" value={this.state.username} onChange={this.handleChange}
-              placeholder="senha"/>
+              placeholder="usuario123"/>
             <label htmlFor="password">Senha:</label>
             <input type="password" name="password" value={this.state.password} onChange={this.handleChange}
               placeholder="•••••"/>

@@ -1,0 +1,59 @@
+.panel {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.panel h2 {
+    margin: 0;
+}
+
+.panel .categories {
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.panel .categories .categ-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.panel .categories button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #ffffff;
+    background: #F25250;
+    flex: 1;
+    padding: 5px 20px;
+    margin: 6px;
+    white-space: nowrap;
+}
+.panel .categories button.active {
+    opacity: 0.5;
+}
+
+.panel .categories button.red      { background: #F25250; }
+.panel .categories button.orange   { background: #FF8847; }
+.panel .categories button.yellow   { background: #FFD651; }
+.panel .categories button.green    { background: #4FC79E; }
+.panel .categories button.blue     { background: #1EA0CF; }
+
+.panel button.proximo {
+    margin-top: 25px;
+}
+
+.panel .errorMessage {
+    display: block;
+    margin-top: 20px;
+}

@@ -6,12 +6,15 @@ nav {
 }
 
 nav h1 {
-    margin: 0px;
     font-weight: 300;
+    margin: 0px;
+    color: #ffffff;
 }
 
 nav h1 span {
+    font-size: 2rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
 nav .navbar {
