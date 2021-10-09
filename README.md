@@ -36,4 +36,4 @@ Ferramentas que foram utilizadas para criar e testar o projeto:
 
 ## Autor
 
-Esse projeto foi criado por [Gustavo Fournier](https://github.com/gustavofournier).
+Esse projeto foi criado por [Celeste Fournier](https://github.com/celestefournier).
